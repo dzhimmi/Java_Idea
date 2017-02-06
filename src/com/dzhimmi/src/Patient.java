@@ -1,6 +1,16 @@
 package com.dzhimmi.src;
 
 class Patient {
+    private enum Injury{
+        sprain,brokenBone,fracturedBone,concussion,stroke,organFailure,cancer,thrombus
+    }
+    private enum InjuryPlace{
+        general,foot,leg,knee,arm,shoulder,hand,elbow,crotch,bottom,liver,kidney,heart,stomach,intestines,lungs,trachea,mouth,nose,eye,brain
+    }
+    private enum InjurySide{
+        right,left
+    }
+
     private String name;
     private String middleName;
     private String surname;
