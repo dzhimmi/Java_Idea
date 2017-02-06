@@ -2,7 +2,9 @@ package com.dzhimmi.src;
 
 class Patient {
     enum Injury{
-        SPRAIN("Sprain"),BROKENBONE("Broken Bone"),FRACTUREDBONE("Fractured Bone"),CONCUSSION("Concussion"),STROKE("Stroke"),ORGANFAILURE("Organ Failure"),CANCER("Cancer"),THROMBUS("Thrombus");
+        SPRAIN("Sprain"),BROKENBONE("Broken Bone"),FRACTUREDBONE("Fractured Bone"),CONCUSSION("Concussion"),
+        STROKE("Stroke"),ORGANFAILURE("Organ Failure"),CANCER("Cancer"),THROMBUS("Thrombus");
+
         private String injuryName;
         Injury(String injuryName){
             this.injuryName = injuryName;
@@ -10,15 +12,31 @@ class Patient {
         String getInjuryName(){
             return injuryName;
         }
-        String HurDur(){
-            return SPRAIN.getInjuryName();
+    }
+    enum InjuryPlace{
+        None("Non specific place"),FOOT("Foot"),LEG("Leg"),KNEE("Knee"),ARM("Arm"),SHOULDER("Shoulder"),HAND("Hand"),
+        ELBOW("Elbow"),CROTCH("Crotch"),BOTTOM("Bottom"),HEAD("Head"),LIVER("Liver"),KIDNEY("Kidney"),HEART("Heart"),
+        STOMACH("Stomach"),INTESTINES("Intestines"),LUNGS("Lungs"),TRACHEA("Trachea"),MOUTH("Mouth"),NOSE("Nose"),
+        EYE("Eye"),BRAIN("Brain");
+
+        private String injuryPlace;
+        InjuryPlace(String injuryPlace){
+            this.injuryPlace = injuryPlace;
+        }
+        String getInjuryPlace(){
+            return injuryPlace;
         }
     }
-    private enum InjuryPlace{
-        GENERAL,FOOT,LEG,KNEE,ARM,SHOULDER,HAND,ELBOW,CROTCH,BOTTOM,LIVER,KIDNEY,HEART,STOMACH,INTESTINES,LUNGS,TRACHEA,MOUTH,NOSE,EYE,BRAIN
-    }
-    private enum InjurySide{
-        RIGHT,LEFT
+    enum InjurySide{
+        RIGHT("Right"),LEFT("Left"),NONE("Non specific side");
+
+        private String injurySide;
+        InjurySide(String injurySide){
+            this.injurySide = injurySide;
+        }
+        String getInjurySide(){
+            return injurySide;
+        }
     }
 
     private String name;
