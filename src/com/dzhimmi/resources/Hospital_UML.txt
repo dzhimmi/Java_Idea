@@ -4,21 +4,22 @@ Patient: UML
 name: String
 middleName: String*
 surname: String
-dateOfBirth: int
-gender: int
+yearOfBirth: int
+gender: char
 ------------------------------------------------------------------------------------------------------------------------
-calcAge(): void
-calcFullName(): void
+calcAge(): int
+calcFullName(): String
 
-getAge(): String age
+getAge(): int age
 getFullName(): String fullName
 getName(): String name
 getMiddleName(): String middleName
 getSurname(): String Surname
+getGender(): char gender
 
 setName(): void
 setMiddleName(): void
 setSurname(): void
-setDateOfBirth(): void
+setYearOfBirth(): void
 setGender(): void
 ------------------------------------------------------------------------------------------------------------------------
