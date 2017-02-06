@@ -9,5 +9,6 @@ public class Main {
         System.out.println(patient1.getSurname());
         System.out.println(patient1.getFullName());
         System.out.println(patient1.getGender());
+        System.out.println(Patient.Injury.SPRAIN.getInjuryName());
     }
 }
