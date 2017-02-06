@@ -1,4 +1,4 @@
 package com.dzhimmi.main;
 
-public class Patient extends Main {
+public class Patient {
 }

@@ -1,0 +1,24 @@
+------------------------------------------------------------------------------------------------------------------------
+Patient: UML
+------------------------------------------------------------------------------------------------------------------------
+name: String
+middleName: String*
+surname: String
+dateOfBirth: int
+gender: int
+------------------------------------------------------------------------------------------------------------------------
+calcAge(): void
+calcFullName(): void
+
+getAge(): String age
+getFullName(): String fullName
+getName(): String name
+getMiddleName(): String middleName
+getSurname(): String Surname
+
+setName(): void
+setMiddleName(): void
+setSurname(): void
+setDateOfBirth(): void
+setGender(): void
+------------------------------------------------------------------------------------------------------------------------
